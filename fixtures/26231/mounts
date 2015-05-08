@@ -1,0 +1,11 @@
+rootfs / rootfs rw 0 0
+proc /proc proc rw,relatime 0 0
+sysfs /sys sysfs rw,seclabel,relatime 0 0
+cgroup /cgroup/cpuset cgroup rw,relatime,cpuset 0 0
+cgroup /cgroup/cpu cgroup rw,relatime,cpu 0 0
+cgroup /cgroup/cpuacct cgroup rw,relatime,cpuacct 0 0
+cgroup /cgroup/memory cgroup rw,relatime,memory 0 0
+cgroup /cgroup/devices cgroup rw,relatime,devices 0 0
+cgroup /cgroup/freezer cgroup rw,relatime,freezer 0 0
+cgroup /cgroup/net_cls cgroup rw,relatime,net_cls 0 0
+cgroup /cgroup/blkio cgroup rw,relatime,blkio 0 0
