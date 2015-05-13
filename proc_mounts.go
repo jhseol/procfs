@@ -63,16 +63,3 @@ func (p Proc) NewMounts() (ProcMounts, error) {
 
   return pm, err
 }
-
-// Cgroups returns the cgroups of the process
-func (p ProcMounts) Cgroups() ProcMounts {
-  m := ProcMounts{}
-
-  for _, v := range p.Mounts {
-    if v.Device == "cgroup" {
-      m.Mounts = append(m.Mounts, v)
-    }
-  }
-
-  return m
-}
